@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / editores
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Datos sensibles de pacientes (NO subir a git)
+data/
+input/
+output/
+
+# Logs / artefactos runtime
+*.log
+
+# Variables de entorno
+.env
+.env.*
+!.env.example

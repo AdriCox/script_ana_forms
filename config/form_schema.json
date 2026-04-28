@@ -1,0 +1,1225 @@
+{
+  "survey_url": "https://redcap.sandpit.camide.cam.ac.uk/surveys/?s=PDH93MERX7JKX9K4",
+  "fixed_form": {
+    "email": "adrian@something.com",
+    "hospital": "España",
+    "hospital_espanol": "Asturias - Hospital Valle del Nalón",
+    "criterios_inclusion": {
+      "dosis_estable_clozapina_4_semanas": "Sí",
+      "edad_mayor_18": "Sí",
+      "discapacidad_cognitiva": "No",
+      "prescripcion_mas_dos_antipsicoticos": "No",
+      "patologia_medica_no_controlada": "No"
+    }
+  },
+  "demografia": {
+    "fields": {
+      "fecha_consentimiento_informado": {
+        "type": "date",
+        "required": true,
+        "aliases": [
+          "fecha del consentimiento informado",
+          "fecha consentimiento",
+          "consentimiento informado",
+          "fecha"
+        ],
+        "form": {
+          "label": "Fecha del consentimiento informado"
+        }
+      },
+      "edad": {
+        "type": "int",
+        "required": true,
+        "aliases": [
+          "edad",
+          "age"
+        ],
+        "form": {
+          "label": "Edad"
+        }
+      },
+      "genero": {
+        "type": "choice",
+        "required": true,
+        "aliases": [
+          "género",
+          "genero",
+          "sexo"
+        ],
+        "choices": [
+          "Mujer",
+          "Hombre",
+          "Otro"
+        ],
+        "form": {
+          "label": "Genero"
+        }
+      },
+      "nivel_educativo": {
+        "type": "choice",
+        "required": true,
+        "aliases": [
+          "nivel educativo",
+          "educación",
+          "educativo"
+        ],
+        "choices": [
+          "Iletrado",
+          "Básico",
+          "Medio",
+          "Superior"
+        ],
+        "form": {
+          "label": "Nivel educativo"
+        }
+      },
+      "ocupacion": {
+        "type": "choice",
+        "required": true,
+        "aliases": [
+          "ocupación",
+          "ocupacion",
+          "empleo",
+          "trabajo"
+        ],
+        "choices": [
+          "Desempleado",
+          "Empleado a tiempo completo",
+          "Empleado a tiempo parcial",
+          "Voluntariado"
+        ],
+        "form": {
+          "label": "Ocupacon"
+        }
+      },
+      "diagnostico": {
+        "type": "choice",
+        "required": true,
+        "aliases": [
+          "diagnóstico",
+          "diagnostico",
+          "dx"
+        ],
+        "choices": [
+          "Esquizofrenia",
+          "Trastorno esquizofreniforme",
+          "Trastorno esquizoafectivo",
+          "Otros"
+        ],
+        "form": {
+          "label": "Diagnostico"
+        }
+      },
+      "otras_patologias_fisicas": {
+        "type": "text",
+        "required": false,
+        "aliases": [
+          "otras patologías físicas",
+          "otras patologias fisicas",
+          "comorbilidad física",
+          "comorbilidad fisica"
+        ],
+        "form": {
+          "label": "Otras patologias fisicas"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "continue_button_texts": [
+      "Next Page",
+      "Siguiente",
+      "Continue",
+      "Continuar",
+      "Submit",
+      "Enviar"
+    ]
+  },
+  "preguntas_generales": {
+    "fields": {
+      "fecha_visita": {
+        "required": false,
+        "aliases": [
+          "fecha visita"
+        ],
+        "form": {
+          "label": "fecha_visita"
+        },
+        "type": "date"
+      },
+      "cigarrillos_por_dia": {
+        "required": false,
+        "aliases": [
+          "cigarrillos por dia"
+        ],
+        "form": {
+          "label": "cigarrillos_por_dia"
+        },
+        "type": "int"
+      },
+      "consumo_alcohol_unidades_por_semana": {
+        "required": false,
+        "aliases": [
+          "consumo alcohol unidades por semana"
+        ],
+        "form": {
+          "label": "consumo_alcohol_unidades_por_semana"
+        },
+        "type": "int"
+      }
+    }
+  },
+  "clozapina": {
+    "fields": {
+      "ano_inicio_clozapina": {
+        "required": false,
+        "aliases": [
+          "ano inicio clozapina"
+        ],
+        "form": {
+          "label": "ano_inicio_clozapina"
+        },
+        "type": "int"
+      },
+      "dosis_diaria_clozapina_mg_dia": {
+        "required": false,
+        "aliases": [
+          "dosis diaria clozapina mg dia"
+        ],
+        "form": {
+          "label": "dosis_diaria_clozapina_mg_dia"
+        },
+        "type": "int"
+      },
+      "dosis_clozapina_manana_mg": {
+        "required": false,
+        "aliases": [
+          "dosis clozapina manana mg"
+        ],
+        "form": {
+          "label": "dosis_clozapina_manana_mg"
+        },
+        "type": "int"
+      },
+      "dosis_clozapina_mediodia_mg": {
+        "required": false,
+        "aliases": [
+          "dosis clozapina mediodia mg"
+        ],
+        "form": {
+          "label": "dosis_clozapina_mediodia_mg"
+        },
+        "type": "int"
+      },
+      "dosis_clozapina_noche_mg": {
+        "required": false,
+        "aliases": [
+          "dosis clozapina noche mg"
+        ],
+        "form": {
+          "label": "dosis_clozapina_noche_mg"
+        },
+        "type": "int"
+      },
+      "fecha_niveles_plasmaticos_clozapina_informado": {
+        "required": true,
+        "aliases": [
+          "fecha niveles plasmaticos clozapina"
+        ],
+        "form": {
+          "label": "fecha_niveles_plasmaticos_clozapina"
+        },
+        "type": "date"
+      },
+
+      
+      "interrupcion_previa_clozapina": {
+        "required": false,
+        "aliases": [
+          "interrupcion previa clozapina"
+        ],
+        "form": {
+          "label": "interrupcion_previa_clozapina"
+        },
+        "type": "choice",
+        "choices": [
+          "Sí",
+          "No"
+        ]
+      },
+      "interrupcion_por_efectos_secundarios": {
+        "required": false,
+        "aliases": [
+          "interrupcion por efectos secundarios"
+        ],
+        "form": {
+          "label": "interrupcion_por_efectos_secundarios"
+        },
+        "type": "choice",
+        "choices": [
+          "Sí",
+          "No"
+        ]
+      },
+      "especificar_efecto_secundario": {
+        "required": false,
+        "aliases": [
+          "especificar efecto secundario"
+        ],
+        "form": {
+          "label": "especificar_efecto_secundario"
+        },
+        "type": "text"
+      },
+      "hospitalizacion_por_efectos_secundarios": {
+        "required": false,
+        "aliases": [
+          "hospitalizacion por efectos secundarios"
+        ],
+        "form": {
+          "label": "hospitalizacion_por_efectos_secundarios"
+        },
+        "type": "choice",
+        "choices": [
+          "Sí",
+          "No"
+        ]
+      },
+      "tratamiento_con_tec": {
+        "required": false,
+        "aliases": [
+          "tratamiento con tec"
+        ],
+        "form": {
+          "label": "tratamiento_con_tec"
+        },
+        "type": "choice",
+        "choices": [
+          "Sí",
+          "No"
+        ]
+      },
+      "antipsicotico_2": {
+        "required": false,
+        "aliases": [
+          "antipsicotico 2"
+        ],
+        "form": {
+          "label": "antipsicotico_2"
+        },
+        "type": "choice",
+        "choices": [
+          "Olanzapine",
+          "Quetiapine",
+          "Risperidone",
+          "Paliperidone",
+          "Aripiprazole",
+          "Brexpiprazole",
+          "Amisulpride",
+          "Cariprazine",
+          "Lurasidone",
+          "Asenepine",
+          "Haloperidol",
+          "Another second generation"
+        ]
+      },
+      "dosis_antipsicotico_2": {
+        "required": false,
+        "aliases": [
+          "dosis antipsicotico 2"
+        ],
+        "form": {
+          "label": "dosis_antipsicotico_2"
+        },
+        "type": "int"
+      },
+      "antidepresivo_1": {
+        "required": false,
+        "aliases": [
+          "antidepresivo 1"
+        ],
+        "form": {
+          "label": "antidepresivo_1"
+        },
+        "type": "choice",
+        "choices": [
+          "Citalopram",
+          "Sertralina",
+          "Fluoxetina",
+          "Escitalopram",
+          "Paroxetina",
+          "Fluvoxamina",
+          "Venlafaxina",
+          "Duloxetina",
+          "Clomipramina",
+          "Amitriptilina",
+          "Imipramina",
+          "Mirtazapina",
+          "Bupropion",
+          "Trazodona",
+          "Reboxetina",
+          "Others"
+        ]
+      },
+      "dosis_antidepresivo_1": {
+        "required": false,
+        "aliases": [
+          "dosis antidepresivo 1"
+        ],
+        "form": {
+          "label": "dosis_antidepresivo_1"
+        },
+        "type": "int"
+      },
+      "antidepresivo_2": {
+        "required": false,
+        "aliases": [
+          "antidepresivo 2"
+        ],
+        "form": {
+          "label": "antidepresivo_2"
+        },
+        "type": "choice",
+        "choices": [
+          "Citalopram",
+          "Sertralina",
+          "Fluoxetina",
+          "Escitalopram",
+          "Paroxetina",
+          "Fluvoxamina",
+          "Venlafaxina",
+          "Duloxetina",
+          "Clomipramina",
+          "Amitriptilina",
+          "Imipramina",
+          "Mirtazapina",
+          "Bupropion",
+          "Trazodona",
+          "Reboxetina",
+          "Others"
+        ]
+      },
+      "dosis_antidepresivo_2": {
+        "required": false,
+        "aliases": [
+          "dosis antidepresivo 2"
+        ],
+        "form": {
+          "label": "dosis_antidepresivo_2"
+        },
+        "type": "int"
+      },
+      "estabilizador_animo_1": {
+        "required": false,
+        "aliases": [
+          "estabilizador animo 1"
+        ],
+        "form": {
+          "label": "estabilizador_animo_1"
+        },
+        "type": "choice",
+        "choices": [
+          "Lithium",
+          "Valproates",
+          "Lamotrigine",
+          "Topiramate",
+          "Others"
+        ]
+      },
+      "dosis_estabilizador_animo_1": {
+        "required": false,
+        "aliases": [
+          "dosis estabilizador animo 1"
+        ],
+        "form": {
+          "label": "dosis_estabilizador_animo_1"
+        },
+        "type": "int"
+      },
+      "estabilizador_animo_2": {
+        "required": false,
+        "aliases": [
+          "estabilizador animo 2"
+        ],
+        "form": {
+          "label": "estabilizador_animo_2"
+        },
+        "type": "choice",
+        "choices": [
+          "Lithium",
+          "Valproates",
+          "Lamotrigine",
+          "Topiramate",
+          "Others"
+        ]
+      },
+      "dosis_estabilizador_animo_2": {
+        "required": false,
+        "aliases": [
+          "dosis estabilizador animo 2"
+        ],
+        "form": {
+          "label": "dosis_estabilizador_animo_2"
+        },
+        "type": "int"
+      },
+      "otra_medicacion_1": {
+        "required": false,
+        "aliases": [
+          "otra medicacion 1"
+        ],
+        "form": {
+          "label": "otra_medicacion_1"
+        },
+        "type": "text"
+      },
+      "otra_medicacion_2": {
+        "required": false,
+        "aliases": [
+          "otra medicacion 2"
+        ],
+        "form": {
+          "label": "otra_medicacion_2"
+        },
+        "type": "text"
+      },
+      "otra_medicacion_3": {
+        "required": false,
+        "aliases": [
+          "otra medicacion 3"
+        ],
+        "form": {
+          "label": "otra_medicacion_3"
+        },
+        "type": "text"
+      },
+      "otra_medicacion_4": {
+        "required": false,
+        "aliases": [
+          "otra medicacion 4"
+        ],
+        "form": {
+          "label": "otra_medicacion_4"
+        },
+        "type": "text"
+      },
+      "otra_medicacion_5": {
+        "required": false,
+        "aliases": [
+          "otra medicacion 5"
+        ],
+        "form": {
+          "label": "otra_medicacion_5"
+        },
+        "type": "text"
+      },
+      "otra_medicacion_6": {
+        "required": false,
+        "aliases": [
+          "otra medicacion 6"
+        ],
+        "form": {
+          "label": "otra_medicacion_6"
+        },
+        "type": "text"
+      }
+    }
+  },
+  "laboratorios": {
+    "fields": {
+      "fecha_niveles_plasmaticos_clozapina": {
+        "required": false,
+        "aliases": [
+          "fecha niveles plasmaticos clozapina",
+          "fecha niveles plasmaticos de clozapina",
+          "fecha niveles clozapina"
+        ],
+        "form": {
+          "label": "fecha_niveles_plasmaticos_clozapina"
+        },
+        "type": "date"
+      },
+      "nivel_clozapina": {
+        "required": false,
+        "aliases": [
+          "nivel clozapina",
+          "clozapina",
+          "clozapine level"
+        ],
+        "form": {
+          "label": "nivel_clozapina"
+        },
+        "type": "int"
+      },
+      "nivel_norclozapina": {
+        "required": false,
+        "aliases": [
+          "nivel norclozapina",
+          "norclozapina",
+          "norclozapine level"
+        ],
+        "form": {
+          "label": "nivel_norclozapina"
+        },
+        "type": "int"
+      }
+    }
+  },
+  "efectos_Secundarios": {
+    "fields": {
+      "sleepy": {
+        "required": false,
+        "aliases": [
+          "sleepy"
+        ],
+        "form": {
+          "label": "sleepy"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "sleepy_severe": {
+        "required": false,
+        "aliases": [
+          "sleepy severe"
+        ],
+        "form": {
+          "label": "sleepy_severe"
+        },
+        "type": "bool"
+      },
+      "drugged": {
+        "required": false,
+        "aliases": [
+          "drugged"
+        ],
+        "form": {
+          "label": "drugged"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "drugged_severe": {
+        "required": false,
+        "aliases": [
+          "drugged severe"
+        ],
+        "form": {
+          "label": "drugged_severe"
+        },
+        "type": "bool"
+      },
+      "dizzy": {
+        "required": false,
+        "aliases": [
+          "dizzy"
+        ],
+        "form": {
+          "label": "dizzy"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "dizzy_severe": {
+        "required": false,
+        "aliases": [
+          "dizzy severe"
+        ],
+        "form": {
+          "label": "dizzy_severe"
+        },
+        "type": "bool"
+      },
+      "heart": {
+        "required": false,
+        "aliases": [
+          "heart"
+        ],
+        "form": {
+          "label": "heart"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "heart_severe": {
+        "required": false,
+        "aliases": [
+          "heart severe"
+        ],
+        "form": {
+          "label": "heart_severe"
+        },
+        "type": "bool"
+      },
+      "eps": {
+        "required": false,
+        "aliases": [
+          "eps"
+        ],
+        "form": {
+          "label": "eps"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "eps_severe": {
+        "required": false,
+        "aliases": [
+          "eps severe"
+        ],
+        "form": {
+          "label": "eps_severe"
+        },
+        "type": "bool"
+      },
+      "drooling": {
+        "required": false,
+        "aliases": [
+          "drooling"
+        ],
+        "form": {
+          "label": "drooling"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "drooling_severe": {
+        "required": false,
+        "aliases": [
+          "drooling severe"
+        ],
+        "form": {
+          "label": "drooling_severe"
+        },
+        "type": "bool"
+      },
+      "blurry": {
+        "required": false,
+        "aliases": [
+          "blurry"
+        ],
+        "form": {
+          "label": "blurry"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "blurry_severe": {
+        "required": false,
+        "aliases": [
+          "blurry severe"
+        ],
+        "form": {
+          "label": "blurry_severe"
+        },
+        "type": "bool"
+      },
+      "dry": {
+        "required": false,
+        "aliases": [
+          "dry"
+        ],
+        "form": {
+          "label": "dry"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "dry_severe": {
+        "required": false,
+        "aliases": [
+          "dry severe"
+        ],
+        "form": {
+          "label": "dry_severe"
+        },
+        "type": "bool"
+      },
+      "sick": {
+        "required": false,
+        "aliases": [
+          "sick"
+        ],
+        "form": {
+          "label": "sick"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "sick_severe": {
+        "required": false,
+        "aliases": [
+          "sick severe"
+        ],
+        "form": {
+          "label": "sick_severe"
+        },
+        "type": "bool"
+      },
+      "heartburn": {
+        "required": false,
+        "aliases": [
+          "heartburn"
+        ],
+        "form": {
+          "label": "heartburn"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "heartburn_severe": {
+        "required": false,
+        "aliases": [
+          "heartburn severe"
+        ],
+        "form": {
+          "label": "heartburn_severe"
+        },
+        "type": "bool"
+      },
+      "constipation": {
+        "required": false,
+        "aliases": [
+          "constipation"
+        ],
+        "form": {
+          "label": "constipation"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "constipation_severe": {
+        "required": false,
+        "aliases": [
+          "constipation severe"
+        ],
+        "form": {
+          "label": "constipation_severe"
+        },
+        "type": "bool"
+      },
+      "bedwetting": {
+        "required": false,
+        "aliases": [
+          "bedwetting"
+        ],
+        "form": {
+          "label": "bedwetting"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "bedwetting_severe": {
+        "required": false,
+        "aliases": [
+          "bedwetting severe"
+        ],
+        "form": {
+          "label": "bedwetting_severe"
+        },
+        "type": "bool"
+      },
+      "urine": {
+        "required": false,
+        "aliases": [
+          "urine"
+        ],
+        "form": {
+          "label": "urine"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "urine_severe": {
+        "required": false,
+        "aliases": [
+          "urine severe"
+        ],
+        "form": {
+          "label": "urine_severe"
+        },
+        "type": "bool"
+      },
+      "thirsty": {
+        "required": false,
+        "aliases": [
+          "thirsty"
+        ],
+        "form": {
+          "label": "thirsty"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "thirsty_severe": {
+        "required": false,
+        "aliases": [
+          "thirsty severe"
+        ],
+        "form": {
+          "label": "thirsty_severe"
+        },
+        "type": "bool"
+      },
+      "hungry": {
+        "required": false,
+        "aliases": [
+          "hungry"
+        ],
+        "form": {
+          "label": "hungry"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "hungry_severe": {
+        "required": false,
+        "aliases": [
+          "hungry severe"
+        ],
+        "form": {
+          "label": "hungry_severe"
+        },
+        "type": "bool"
+      },
+      "sexual": {
+        "required": false,
+        "aliases": [
+          "sexual"
+        ],
+        "form": {
+          "label": "sexual"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "sexual_severe": {
+        "required": false,
+        "aliases": [
+          "sexual severe"
+        ],
+        "form": {
+          "label": "sexual_severe"
+        },
+        "type": "bool"
+      },
+      "ocd": {
+        "required": false,
+        "aliases": [
+          "ocd"
+        ],
+        "form": {
+          "label": "ocd"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "ocd_severe": {
+        "required": false,
+        "aliases": [
+          "ocd severe"
+        ],
+        "form": {
+          "label": "ocd_severe"
+        },
+        "type": "bool"
+      },
+      "cough": {
+        "required": false,
+        "aliases": [
+          "cough"
+        ],
+        "form": {
+          "label": "cough"
+        },
+        "type": "choice",
+        "choices": [
+          "nunca",
+          "una vez",
+          "algunas veces",
+          "todos los días"
+        ]
+      },
+      "cough_severe": {
+        "required": false,
+        "aliases": [
+          "cough severe"
+        ],
+        "form": {
+          "label": "cough_severe"
+        },
+        "type": "bool"
+      },
+      "other_symptom_1": {
+        "required": false,
+        "aliases": [
+          "other symptom 1"
+        ],
+        "form": {
+          "label": "other_symptom_1"
+        },
+        "type": "text"
+      },
+      "other_symptom_2": {
+        "required": false,
+        "aliases": [
+          "other symptom 2"
+        ],
+        "form": {
+          "label": "other_symptom_2"
+        },
+        "type": "text"
+      },
+      "other_symptom_3": {
+        "required": false,
+        "aliases": [
+          "other symptom 3"
+        ],
+        "form": {
+          "label": "other_symptom_3"
+        },
+        "type": "text"
+      },
+      "oci_r2": {
+        "required": false,
+        "aliases": [
+          "oci r2"
+        ],
+        "form": {
+          "label": "oci_r2"
+        },
+        "type": "int"
+      },
+      "oci_r8": {
+        "required": false,
+        "aliases": [
+          "oci r8"
+        ],
+        "form": {
+          "label": "oci_r8"
+        },
+        "type": "int"
+      },
+      "oci_r14": {
+        "required": false,
+        "aliases": [
+          "oci r14"
+        ],
+        "form": {
+          "label": "oci_r14"
+        },
+        "type": "int"
+      },
+      "eq_5dm": {
+        "required": false,
+        "aliases": [
+          "eq 5dm"
+        ],
+        "form": {
+          "label": "eq_5dm"
+        },
+        "type": "int"
+      },
+      "eq_5dc": {
+        "required": false,
+        "aliases": [
+          "eq 5dc"
+        ],
+        "form": {
+          "label": "eq_5dc"
+        },
+        "type": "int"
+      },
+      "eq_5da": {
+        "required": false,
+        "aliases": [
+          "eq 5da"
+        ],
+        "form": {
+          "label": "eq_5da"
+        },
+        "type": "int"
+      },
+      "eq_5dd": {
+        "required": false,
+        "aliases": [
+          "eq 5dd"
+        ],
+        "form": {
+          "label": "eq_5dd"
+        },
+        "type": "int"
+      },
+      "eq_5dax": {
+        "required": false,
+        "aliases": [
+          "eq 5dax"
+        ],
+        "form": {
+          "label": "eq_5dax"
+        },
+        "type": "int"
+      },
+      "eq_5d_change": {
+        "required": false,
+        "aliases": [
+          "eq 5d change"
+        ],
+        "form": {
+          "label": "eq_5d_change"
+        },
+        "type": "choice",
+        "choices": [
+          "peor",
+          "igual",
+          "mejor"
+        ]
+      },
+      "eq_5d_scale": {
+        "required": false,
+        "aliases": [
+          "eq 5d scale"
+        ],
+        "form": {
+          "label": "eq_5d_scale"
+        },
+        "type": "int"
+      },
+      "cgi_p": {
+        "required": false,
+        "aliases": [
+          "cgi p"
+        ],
+        "form": {
+          "label": "cgi_p"
+        },
+        "type": "int"
+      },
+      "cgi_n": {
+        "required": false,
+        "aliases": [
+          "cgi n"
+        ],
+        "form": {
+          "label": "cgi_n"
+        },
+        "type": "int"
+      },
+      "cgi_d": {
+        "required": false,
+        "aliases": [
+          "cgi d"
+        ],
+        "form": {
+          "label": "cgi_d"
+        },
+        "type": "int"
+      },
+      "cgi_c": {
+        "required": false,
+        "aliases": [
+          "cgi c"
+        ],
+        "form": {
+          "label": "cgi_c"
+        },
+        "type": "int"
+      },
+      "cgi_o": {
+        "required": false,
+        "aliases": [
+          "cgi o"
+        ],
+        "form": {
+          "label": "cgi_o"
+        },
+        "type": "int"
+      }
+    }
+  }
+}
